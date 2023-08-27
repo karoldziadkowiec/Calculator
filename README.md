@@ -9,7 +9,7 @@ The application offers the functions of deleting, resetting the result, changing
 Application view: <br>
 ![Application view](https://github.com/karoldziadkowiec/Calculator/blob/master/photos/11.png)
 
-Window after multiplying the numbers 6 * 9: <br>
+Window after multiplying the numbers 7 * 9: <br>
 ![After multiplying](https://github.com/karoldziadkowiec/Calculator/blob/master/photos/22.png)
 
 window after deleting one number with the DEL function: <br>
