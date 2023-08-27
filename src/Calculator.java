@@ -28,6 +28,7 @@ class Calculator implements ActionListener {
         frame.getContentPane().setBackground(new Color(48, 51, 49));
         ImageIcon icon = new ImageIcon("icon.png");
         frame.setIconImage(icon.getImage());
+        frame.setResizable(false);
         frame.setLayout(null);
     }
 
