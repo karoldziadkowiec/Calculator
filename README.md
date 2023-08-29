@@ -7,10 +7,10 @@ Technologies used in the project: Java (Swing library).
 The application offers the functions of deleting, resetting the result, changing the sign of the number and displaying the result. The project also includes a module responsible for centering the window on the screen and integration with the icon, which further improves the quality of using the application.
 
 Application view: <br>
-![Application view](https://github.com/karoldziadkowiec/Calculator/blob/master/photos/1.png)
+![Application view](https://github.com/karoldziadkowiec/Calculator/blob/master/photos/11.png)
 
-Window after multiplying the numbers 6 * 9: <br>
-![After multiplying](https://github.com/karoldziadkowiec/Calculator/blob/master/photos/2.png)
+Window after multiplying the numbers 7 * 9: <br>
+![After multiplying](https://github.com/karoldziadkowiec/Calculator/blob/master/photos/22.png)
 
 window after deleting one number with the DEL function: <br>
-![After deleting one number](https://github.com/karoldziadkowiec/Calculator/blob/master/photos/3.png)
+![After deleting one number](https://github.com/karoldziadkowiec/Calculator/blob/master/photos/33.png)
