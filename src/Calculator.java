@@ -3,6 +3,7 @@ import java.awt.*;
 import java.awt.event.*;
 
 class Calculator implements ActionListener {
+
     JFrame frame;
     JPanel panel;
     JTextField textBox;
@@ -14,25 +15,31 @@ class Calculator implements ActionListener {
     char operator;
 
     Calculator() {
+
         initializeFrame();
         createComponents();
         addComponentsToPanel();
         addComponentsToFrame();
         frame.setVisible(true);
+
     }
 
     private void initializeFrame() {
+
         frame = new JFrame("Calculator");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(400, 550);
         frame.getContentPane().setBackground(new Color(48, 51, 49));
         ImageIcon icon = new ImageIcon("icon.png");
         frame.setIconImage(icon.getImage());
+        frame.setLocationRelativeTo(null);
         frame.setResizable(false);
         frame.setLayout(null);
+
     }
 
     private void createComponents() {
+
         textBox = new JTextField();
         textBox.setBounds(30, 25, 320, 60);
         textBox.setBackground(new Color(145, 171, 152));
@@ -84,9 +91,11 @@ class Calculator implements ActionListener {
         panel.setBounds(30, 170, 320, 320);
         panel.setLayout(new GridLayout(4, 4, 10, 10));
         panel.setBackground(new Color(62, 66, 63));
+
     }
 
     private void addComponentsToPanel() {
+
         panel.add(numberButtons[7]);
         panel.add(numberButtons[8]);
         panel.add(numberButtons[9]);
@@ -103,18 +112,22 @@ class Calculator implements ActionListener {
         panel.add(decButton);
         panel.add(equButton);
         panel.add(addButton);
+
     }
 
     private void addComponentsToFrame() {
+
         frame.add(panel);
         frame.add(textBox);
         frame.add(clrButton);
         frame.add(negButton);
         frame.add(delButton);
+
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
+
         for (int i = 0; i < 10; i++) {
             if (e.getSource() == numberButtons[i]) {
                 textBox.setText(textBox.getText().concat(String.valueOf(i)));
@@ -178,9 +191,7 @@ class Calculator implements ActionListener {
                 textBox.setText(textBox.getText() + string.charAt(i));
             }
         }
+
     }
 
-    public JFrame getFrame() {
-        return frame;
-    }
 }
